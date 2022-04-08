@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex010</title>
+</head>
+<body>
+    <h1>Sistema de Multas</h1>
+    <input type="number" name="vel" id="vel"> Km/h
+    <input type="button" value="verificar" onclick="calcular()">
+    <div><p class="result"></p></div>
+
+    <script>
+        function calcular(){
+            var string_vel = document.getElementById('vel')
+            var vel = Number(string_vel.value)
+            var result = document.querySelector('.result')
+
+            result.innerHTML = `Sua velocidade foi de ${vel}`
+        }
+    </script>
+</body>
+</html>
