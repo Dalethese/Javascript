@@ -1,0 +1,40 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    background-color: rgb(70, 142, 236);
+    font: normal 15pt arial;
+}
+header  
+{
+    text-align: center;
+    color: white;
+}
+section 
+{
+    background-color: white;
+    max-width: 500px;
+    margin: 5px auto;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px black;
+}
+#nascimento
+{
+    padding: 10px;
+}
+img 
+{
+    max-width: 250px;
+    height: 250px;
+}
+footer
+{
+    text-align: center;
+    color: white;
+    font-style: italic;
+}
