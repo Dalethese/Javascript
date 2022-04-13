@@ -1,18 +1,24 @@
 function iniciar(){
-    let mes = document.querySelector('input#estacao')
+    let input = document.querySelector('input#estacao')
+    let mes = input.value
+    console.log(mes)
+    let estacao = ''
     let texto = document.querySelector('#texto')
-    switch(mes.toLowerCase()){
+    
+    switch(mes){
         case 'janeiro': case 'fevereiro': case 'março':
-            texto.innerHTML = 'Verão'
+            estacao = 'Verão'
             break
         case 'abril': case 'maio': case 'junho':
-            texto.innerHTML = 'Outono'
+            estacao = 'Outono'
             break
         case 'julho': case 'agosto': case 'setembro':
-            texto.innerHTML = 'Inverno'
+            estacao = 'Inverno'
             break
         case 'outubro': case 'novembro': case 'dezembro':
-            texto.innerHTML = 'Primavera'
+            estacao = 'Primavera'
             break
     }
+
+    texto.innerHTML = `${estacao}`
 }
