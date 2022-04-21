@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+    <style>
+        body 
+        {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        label[for="final"]
+        {
+            margin-right: 10px;
+        }
+        input[type="number"]
+        {
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+        input[type="button"]
+        {
+            padding: 5px 10px;
+            background-color: darkgreen;
+            font: 400 1em arial;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Fatorial</h1>
+    <p>Escreva um número (entre 1 e 21) na caixa a seguir e te mostrarei o Fatorial dele.</p>
+    <form>
+        <label for="number">Número:</label>
+        <input type="number" name="num" id="number">
+        <input type="button" value="fatorial" onclick="fatorial()">
+    </form>
+    <section id="saida">
+        
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
